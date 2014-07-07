@@ -1,19 +1,22 @@
-#include <stdio.h> 
-int main() 
-{ 
-    int a,b,c,d; 
-    scanf("%d %d",&a,&b); 
-    c=(a+1)*a/2+(a-1)*a;//最大值 
-    d=(a+1)*a/2+a-1;//最小值 
-    if(b==c||b==d) 
-        printf("1\n"); 
-    else if((c-b)<(a-1)) 
-        printf("3\n"); 
-    else if((b-d)<(a-1)) 
-        printf("3\n"); 
-    else if((c-b)%(a-1)==0) 
-        printf("2\n"); 
-    else 
-        printf("4\n"); 
-    return 0; 
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+
+   double a,b,c,d,s;
+   cin>>a>>b>>c;
+    cout<<fixed<<setprecision(2);
+   if(b*b-4*a*c>=0)
+   { s=(-b+sqrt(b*b-4*a*c))/(2*a);d=(-b-sqrt(b*b-4*a*c))/(2*a);
+   if(s>d)
+    cout<<s<<' '<<d<<endl;
+   else
+    cout<<d<<' '<<s<<endl;
+   }
+else
+    cout<<-b/(2*a)<<'+'<<sqrt(4*a*c-b*b)/(2*a)<<'i'<<' '<<-b/(2*a)<<'-'<<sqrt(4*a*c-b*b)/(2*a)<<'i'<<endl;
+    return 0;
 }
