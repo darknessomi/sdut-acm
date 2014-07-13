@@ -1,3 +1,9 @@
+/* 
+* @Author: omi
+* @Date:   2014-07-07 15:43:01
+* @Last Modified by:   omi
+* @Last Modified time: 2014-07-13 18:52:47
+*/
 #include <stdio.h>
 int main(){	
 	int n,s,q,a,d=0,e=0,f=0,g=0,h=0;	
